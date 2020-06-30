@@ -79,7 +79,6 @@ var hapusPenumpang = function (namaPenumpang, penumpang) {
 
 
 
-
 // var hapusPenumpang = function (namaPenumpang, penumpang) {
 //     if (penumpang.length == 0) {
 //         console.log('Angkot sedang kosong !');
