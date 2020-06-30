@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Function Declaration adalah function yang sudah kita buat sebelumnya, jadi -->
+    <!-- function namaFunction (parameter(optional)) { functionBody } -->
+
+
+    <!-- Function Expression adalah function yang kita simpan kedalam sebuah Expresi (Variable), jadi -->
+    <!-- var tampilPesan = function (nama){
+        alert('hello' + nama);
+        } 
+        tampilPesan('Abdu');
+    -->
+    <!-- Function Expression biasanya disimpan kedalam sebuah VARIABLE -->
+    <!-- Ketika ingin membuat function expression SELALU didefinisikan terlebih dahulu sebelum digunakan -->
+
+
+
+    <script>
+        let i = true;
+        while (i) {
+            var tampilPesan = function () {
+                let nama = prompt('Masukan nama :')
+                alert('hello ' + nama);
+            }
+            tampilPesan();
+
+            i = confirm('mau lagi ?')
+        }
+        alert('ty')
+    </script>
+</body>
+
+</html>

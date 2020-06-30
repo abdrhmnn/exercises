@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // Manipulasi Array / Ini adalah cara MANUAL nya
+
+
+        // 1. Menambah isi array
+        // var arr = [];
+        // arr[0] = "Abdu";
+        // arr[1] = "Rahman";
+        // arr[2] = 1;
+        // console.log(arr);
+
+
+        // 2. Menghapus isi array
+        // var arr = ["Abdu", "Rahman", true];
+        // arr[1] = undefined; // Hapus sesuai dengan INDEKS dari array
+        // console.log(arr);
+
+
+
+        // 3. Menampilkan isi array
+        var arr = ["Abdu", "Rahman", "Umji", "Eunha", "Yerin"];
+        var angka = [1, 4, 5, 2, 3];
+        // Menampilkan dengan menggunakan Looping
+        for (var i = 0; i < arr
+            .length; i++) { // arr.length adalah method utk menyuruh JS menghitung sendiri elemen dari array nya
+            console.log('Mahasiswa ke-' + (i + 1) + ' : ' + arr[i]);
+        }
+
+        arr.forEach(function (e, i) {
+            console.log('Indeks ke ' + (i + 1) + ', dan isinya' + ' : ' + e.toUpperCase());
+        })
+
+
+
+        var angka2 = angka.map(function (e) {
+            return e * 2;
+        });
+        console.log('Mahasiswa kita ada : ' + angka2.join(' - '));
+    </script>
+</body>
+
+</html>

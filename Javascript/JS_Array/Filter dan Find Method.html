@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 1. filter
+        // fungsinya mencari nilai pada array dan MENGEMBALIKAN nya kedalam bentuk ARRAY dan mengembalikan
+        // LEBIH dari SATU NILAI
+        var num = [1, 4, 3, 5, 2, 8, 9, 7, 6, 10, 20];
+        var num2 = num.filter(function (e, i) {
+            return i > 4; // jadi ini kita akan mencari angka yang lebih dari 4 didalam ARRAY
+        });
+        console.log(num2.join(' - '));
+
+
+
+        // 2. find
+        // fungsinya mencari SATU NILAI pada ARRAY tetapi juga HARUS disimpan KEDALAM SEBUAH VARIABLE
+        var angka = [1, 4, 3, 5, 2, 8, 9, 7, 6, 10, 20];
+        var angka2 = angka.find(function (e) {
+            return e > 4;
+        });
+        console.log(angka2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Latihan menghitung jumlah LUAS dari sebuah KUBUS
+        // var a = 8;
+        // var b = 3;
+
+        // var total = (a * 8 * 8) + (b * 3 * 3);
+        // console.log(total);
+
+        function jumlahVolumeDuaKubus(a, b) {
+            var total, volumeA, volumeB
+
+            volumeA = a * a * a;
+            volumeB = b * b * b;
+
+            total = volumeA + volumeB;
+
+            return total;
+        }
+
+        console.log(jumlahVolumeDuaKubus(8, 3));
+        console.log(jumlahVolumeDuaKubus(12, 4));
+        console.log(jumlahVolumeDuaKubus(10, 5)); // Ini untuk menjalankan FUNCTION, bisa jg dgn alert
+    </script>
+</body>
+
+</html>

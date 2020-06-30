@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Refactoring adalah sebuah proses yang mengubah kode agar menjadi lebih baik lagi tanpa
+    mengubah fungsionalitasnya -->
+
+
+    <script>
+        // program dibawah ini akan kita refactoring menjadi program yang lebih sederhana lagi
+        var a = 8;
+        var b = 3;
+
+        function jumlahVolumeDuaKubus(a, b) {
+            var total, volumeA, volumeB
+
+            volumeA = a * a * a;
+            volumeB = b * b * b;
+
+            total = volumeA + volumeB;
+
+            return total;
+        }
+        console.log(jumlahVolumeDuaKubus(8, 3));
+
+
+
+        // REFACTORING
+        function jumlahVolumeDuaKubus2(a, b) {
+            return a * a * a + b * b * b; // jadi kode diatas bisa kita singkat menjadi seperti ini
+        }
+        console.log(jumlahVolumeDuaKubus2(5, 10));
+    </script>
+</body>
+
+</html>

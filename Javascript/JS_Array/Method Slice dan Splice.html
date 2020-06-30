@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 1. Splice
+        // contekan dari splice :
+        // splice (indexAwal, mauDihapusBerapa, elemenBaru1, elemenBaru2, ...)
+        // var arr = ["Abdu", "Rahman", "Umji"];
+        // arr.splice(2, 0,
+        //     'Eunha'); // ini artinya kita akan menseleksi elemen di indeks ke 2 dan tidak ada elemen yang ingin kita
+        // hapus dan kita tambahkan string 'eunha' pada indeks ke 2
+        // console.log(arr.join(' - '));
+
+
+        // var arr2 = ["Abdu", "Rahman", "Umji", true];
+        // arr2.splice(1, 2,
+        // 'Eunha'); // ini artinya saya akan mulai dari indeks ke 1 dan menghapus 2 indeks setelahnya termasuk indeks 
+        // yang dipilih sebelumnya dan saya tambahkan string baru yaitu 'eunha'
+        // console.log(arr2.join(' - '));
+
+
+
+
+
+
+
+        // 2. Slice
+        // adalah mengiris sebuah array menjadi sebuah array yang baru
+        // rumus nya : slice(indeksAwal, indeksAkhir);
+        var arr = ["Abdu", "Rahman", "Umji", true, "Eunha"];
+        var arr2 = arr.slice(1, 4); // slice ini akan menghasilkan ARRAY BARU dan harus ditampung kedalam variable
+        console.log(arr2.join(' - '));
+
+
+        var arr3 = ['Hello', 'Rahman', 'Hai'];
+        arr3.splice(1, 2, 'Eunha');
+        console.log(arr3.join(' - '));
+
+        var arr4 = ["Abdu", "Rahman", "Umji", true];
+        arr4.splice(1, 2, 'Eunha');
+        console.log(arr4.join(' - '));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Didalam Bahasa pemrograman ada dua jenis scope, yaitu :
+        1. block scope, terdapat pada bahasa pemrograman C dan Java
+            Maksud dari block scope itu adalah sebuah variable yang hanya bisa digunakan didalam sebuah
+            block statement nya saja
+
+        2. function scope, terdapat pada Javascript
+            Maksud dari function scope itu adalah, sebuah variable yang HANYA bisa digunakan didalam
+            function nya saja -->
+
+
+
+    <script>
+        var a = 1; // Ini disebut dengan variable GLOBAL / window scope
+        // Jika ingin var global ini bisa diakses kedalam function maka tambahkan window.a kedlm log nya
+
+        function tes() {
+            a = 2; // Ini disebut dengan variable LOKAL, jadi var a ini hanya bisa dipanggil didalam 
+            // console.log(window.a); // function nya saja
+            // Keyword var yang ada didalam function itu HARUS ditulis jika ingin mendeklarasikan nya menjadi
+            // sebuah variable LOKAL, jika tidak maka JS akan melihat ke luar dari function nya dan akan 
+            // menibankan variable global yang sebelumnya sudah dibuat
+            // Dan juga ketika kita mendeklarasikan sebuah parameter didalam function, parameter tersebut
+            // akan menjadi variable LOKAL
+        }
+        tes();
+        console.log(a);
+    </script>
+</body>
+
+</html>

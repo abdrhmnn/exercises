@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Array adalah tipe data yang digunakan utk mendeskripsikan kumpulan elemen (nilai atau variabel),
+    yang tiap" elemennya memiliki INDEKS -->
+    <!-- Contoh : -->
+    <!-- var hari = ['senin', 'selasa', 'rabu']; -->
+
+    <!-- Beberapa definisi array : -->
+    <!-- 1. Array pada JS bertipe object
+         2. Elemen pada array boleh memiliki tipe data yang berbeda
+         3. Key adalah index pada array yang bertipe interger dan dimulai dari angka 0 (nol) -->
+
+
+    <script>
+        var binatang = ['ayam', 'sapi', 'ular', 'kerbau', 'kucing'];
+        var myArr = ['teks', 2, false, [4, 5, [1, 2, 3, 6]]];
+        console.log(binatang);
+        console.log(typeof (binatang));
+        console.log(binatang.join(' - ')); // ini utk menghitung jumlah elemen yang ada didalam array
+        console.log(myArr[3][2][2]); // Ini disebut array Multidimensi / Array Bersarang
+    </script>
+</body>
+
+</html>

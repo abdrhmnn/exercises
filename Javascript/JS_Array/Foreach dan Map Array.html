@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Foreach dan Map adalah sebuah method Looping pada array -->
+
+    <script>
+        // 1. forEach
+        // forEach TIDAK mengembalikan NILAI ARRAY
+        var angka = [1, 2, 3, 4, 5, 6, 7, 8, "Hello"];
+        var mhs = ["Abdu", "Rahman", "Umji", "Eunha"];
+        // for ( var i = 0; i < angka.length; i++){
+        //     console.log(angka[i]);
+        // }
+        // Ini jika kita gunakan for, tetapi jika kita gunakan forEach maka :
+
+        angka.forEach(function (e) {
+            console.log(e);
+        });
+
+        mhs.forEach(function (e,
+            i
+        ) { // parameter e itu adalah elemen dari ARRAY nya dan parameter i itu adalah elemen dari INDEKS nya
+            console.log('Mahasiswa ke-' + (i + 1) + ': ' + e);
+        });
+
+
+
+
+        // 2. map
+        // map mengembalikan ARRAY
+        var number = [1, 2, 3, 4, 5, 6, 7, 8];
+        var number2 = number.map(function (e) { // jadi kita harus simpan dulu kedalam variable karena map 
+            // mengembalikan NILAI ARRAY
+            return e * 2;
+        }).
+        filter(nama => nama < 10)
+        console.log(number2.join(' - '));
+
+
+
+
+
+
+        // 3. sort
+        // untuk mengurutkan isi dari array
+        var num = [1, 4, 3, 5, 2, 8, 9, 7, 6, 10, 20];
+        console.log(num.join(' - '));
+        num.sort(function (a,
+            b) { // Ini adalah rumus supaya angka PULUHAN didalam array nya menjadi terurut secara BENAR
+            return a - b;
+        });
+        console.log(num.join(' - '));
+    </script>
+</body>
+
+</html>

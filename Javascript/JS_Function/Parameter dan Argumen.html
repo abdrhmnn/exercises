@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Parameter adalah suatu variable lokal yang ada didalam kurung pada saat function dibuat dan juga
+    digunakan untuk menampung nilai ketika function dipanggil -->
+
+    <!-- Argumen adalah nilai yang dikirimkan kepada parameter saat fungsi nya dipanggil -->
+
+    <script>
+        // contoh
+        function tambah(c, d) { // a dan b yang ada didlm function tambah itu adalah PARAMETER
+            return a + b;
+        }
+
+        function kali(a, b) {
+            return a * b;
+        }
+        var a = parseInt(prompt('Masukan Angka 1 :')); // parseInt itu adalah sebuah cara utk mengubah tipe data 
+        var b = parseInt(prompt('Masukan Angka 2 :')); // menjadi sebuah INT (interger), karena hasil yang dihasilkan
+        // dari prompt itu adalah sebuah STRING maka kita hrs ubah dulu kedalam INT baru bs dijumlahkan
+        console.log(tambah(a, b)); // a dan b yang ada didalam itu adalah ARGUMEN
+
+
+
+        // Argumen juga bisa kita masukan sebuah function lagi, contoh
+        console.log(kali(tambah(a, b), tambah(a, b))); // Ini artinya kita tambahkan dulu masing" argumen
+        // dari function tambah nya setelah itu baru dikali kan masing" argumen nya
+    </script>
+</body>
+
+</html>

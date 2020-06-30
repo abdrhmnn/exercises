@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+
+<body>
+
+    <!-- Switch itu sama seperti IF ELSE hanya saja, switch cuma membutuhkan satu KONDISI saja -->
+    <!-- Sintaks Umum switch -->
+    <!-- switch(ekspresi) {
+        case "nilai 1"
+         aksi 1
+          [break;]
+        case "nilai 2"
+         aksi 2
+          [break;]
+        default:
+         aksi default
+          [break;]
+        } -->
+
+    <script>
+        // var angka = prompt('Masukan Angka :')
+        // switch (angka) {
+        //     case "1":  // Didalam case itu harus NILAI gaboleh sebuah kondisi
+        //         alert('Anda Memasukkan angka 1');
+        //         break;
+        //     case "2":
+        //         alert('Anda Memasukkan angka 2');
+        //         break;
+        //     case "3":
+        //         alert('Anda Memasukkan angka 3');
+        //         break;
+        //     default: // default ini sama seperti ELSE, kalo tidak ada option lain maka default akan dijalankan
+        //         alert('Angka yang anda masukkan salah!');
+        //         break;
+        // }
+
+
+        let ulang = true;
+        while (ulang) {
+            var item = prompt('Masukan nama makanan : \n (cth: nasi, daging, susu, hamburger, softdrink)')
+            // prompt itu selalu menghasilkan output yang bertipe data STRING
+
+
+            switch (item) {
+                case 'nasi':
+                    alert('Makanan / Minuman SEHAT!');
+                    break; // break ini berfungsi untuk menghentikan proses dari SWITCH
+                case 'daging':
+                    alert('Makanan / Minuman SEHAT!');
+                    break;
+                case 'susu':
+                    alert('Makanan / Minuman SEHAT!');
+                    break;
+                case 'hamburger':
+                    alert('Makanan / Minuman TIDAK SEHAT!');
+                    break;
+                case 'softdrink':
+                    alert('Makanan / Minuman TIDAK SEHAT!');
+                    break;
+                default:
+                    alert('Anda memasukkan nama makanan / minuman yang salah!');
+                    break;
+            }
+            ulang = confirm('mau pilih lagi ?');
+        }
+        alert('Terima kasih sudah memilih!, Yeaayyy')
+    </script>
+</body>
+
+</html>
