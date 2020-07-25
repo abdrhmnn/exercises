@@ -23,3 +23,4 @@ var_dump(1 === "1");
 
 // AND = true <> false = false
 // OR = true <> false = true
+
