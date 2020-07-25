@@ -97,3 +97,4 @@ echo $produk2->getInfoProduk();
 
 // $infoProduk1 = new CetakInfoProduk();
 // echo $infoProduk1->Cetak($produk1);
+
