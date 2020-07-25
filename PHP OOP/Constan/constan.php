@@ -65,3 +65,4 @@ class Coba1
 
 $obj = new Coba1;
 echo $obj->getAngka();
+
