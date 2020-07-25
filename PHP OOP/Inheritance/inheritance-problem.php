@@ -80,3 +80,4 @@ echo $produk2->getInfoLengkap();
 
 // $infoProduk1 = new CetakInfoProduk();
 // echo $infoProduk1->Cetak($produk1);
+
