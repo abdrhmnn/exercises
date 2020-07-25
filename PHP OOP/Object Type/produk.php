@@ -57,3 +57,4 @@ echo "<br>";
 // Mencetak fungsi cetak yang ada didalam class CetakInfoProduk
 $infoProduk1 = new CetakInfoProduk();
 echo $infoProduk1->Cetak($produk1);
+
