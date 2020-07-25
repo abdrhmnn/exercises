@@ -32,3 +32,4 @@ echo "<br>";
 // menambahkan element baru pada array
 $hari[] = "Hello";
 var_dump($hari);
+
