@@ -178,3 +178,4 @@ echo $produk1->getPenulis();
 
 // $infoProduk1 = new CetakInfoProduk();
 // echo $infoProduk1->Cetak($produk1);
+
