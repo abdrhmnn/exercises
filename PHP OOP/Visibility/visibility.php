@@ -142,3 +142,4 @@ echo "<br>";
 
 $infoProduk1 = new CetakInfoProduk();
 echo $infoProduk1->Cetak($produk2);
+
