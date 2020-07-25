@@ -83,3 +83,4 @@ $produk5 = new Coba();
 echo "Komik : " . $produk3->getLabel();
 echo "<br>";
 echo "Game : " . $produk4->getLabel();
+
