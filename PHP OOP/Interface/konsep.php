@@ -27,3 +27,4 @@ class Apel implements buah
 
 $obj = new Apel;
 echo $obj->Coba("Abdu");
+
