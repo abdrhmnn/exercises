@@ -52,3 +52,4 @@ $obj2 = new ContohStatic2;
 echo $obj2->halo();
 echo $obj2->halo();
 echo $obj2->halo();
+
